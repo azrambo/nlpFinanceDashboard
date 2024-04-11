@@ -25,19 +25,19 @@ df = pd.DataFrame({'headline': headlines.keys(),
                    'url': headlines.values()})
 
 first_5_articles = df.head()
+first_5_articles = first_5_articles.assign(text='')
+first_5_articles = first_5_articles.assign(summary='')
 
-article_texts = {}
 for index, article in first_5_articles.iterrows():
     response = requests.get(article['url'])
     sub_soup = BeautifulSoup(response.content, 'html.parser')
     article_body_element = sub_soup.find('div', class_='ArticleBody-articleBody') # ArticleBody-articleBody
     article_text = article_body_element.get_text()  # Extracting only the text
     print(article_text)
-    first_5_articles['text'] = article_text
-    # first_5_articles['summary'] = summarizer(article)
-    # print(article_text)
+    article['text'] = article_text
+    article['summary'] = summarizer(article['text'])[0]['generated_text']
 
-# print(first_5_articles['summary'])
+print(first_5_articles['summary'])
 
 
 
