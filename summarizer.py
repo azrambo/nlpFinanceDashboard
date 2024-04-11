@@ -37,5 +37,4 @@ for index, article in first_5_articles.iterrows():
     article['text'] = article_text
     article['summary'] = summarizer(article['text'])[0]['generated_text']
 
-
 first_5_articles.to_csv('article_summaries.csv')
