@@ -17,25 +17,6 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 
-import pandas as pd
-import numpy as np
-import torch
-import re
-import string
-import nltk
-from nltk.stem import WordNetLemmatizer, PorterStemmer
-from nltk.tokenize import word_tokenize
-from nltk.corpus import wordnet
-from transformers import DebertaV2Tokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
-from datasets import Dataset, DatasetDict
-from sklearn.metrics import accuracy_score, f1_score
-import random
-
-# Download necessary NLTK resources
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-
 class TextDataProcessor:
     def __init__(self, file_path):
         self.file_path = file_path
