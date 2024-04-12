@@ -16,12 +16,12 @@ pd.set_option('display.max_colwidth', None)
 url = "https://www.reuters.com/business/finance/"
 chrome_options = Options()
 chrome_options.add_argument("--headless")
-chrome_driver_path = "path/to/chromedriver"
+chrome_driver_path = "/usr/local/bin/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
 
 
-soup = BeautifulSoup(response.content, 'html.parser')
-print(soup)
+# soup = BeautifulSoup(response.content, 'html.parser')
+# print(soup)
 
 
 # headlines = {}
