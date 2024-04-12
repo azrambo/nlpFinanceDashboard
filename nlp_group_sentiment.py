@@ -1,13 +1,3 @@
-
-"""
-!pip install transformers[torch]
-!pip install accelerate -U
-!pip install datasets
-!pip install tranformers
-!pip install tensorflow
-!pip install torch
-"""
-
 import pandas as pd
 import numpy as np
 import torch
