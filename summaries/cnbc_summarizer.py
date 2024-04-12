@@ -12,12 +12,12 @@ summarizer = pipeline(
     min_length=100, max_length=500
 )
 
-url = "https://www.cnbc.com/world/?region=world"
+url = "https://www.cnbc.com/finance/"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 headlines = {}
-headline_elements = soup.find_all('a', class_='LatestNews-headline')
+headline_elements = soup.find_all('a', class_='Card-title')
 for headline_element in headline_elements:
     headlines[headline_element.text.strip()] = headline_element['href']
 
@@ -37,4 +37,4 @@ for index, article in first_5_articles.iterrows():
     article['text'] = article_text
     article['summary'] = summarizer(article['text'])[0]['generated_text']
 
-first_5_articles.to_csv('cnbc_article_summaries.csv')
+first_5_articles.to_csv('/summaries/cnbc_article_summaries.csv')
