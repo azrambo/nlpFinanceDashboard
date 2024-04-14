@@ -6,24 +6,24 @@ Project by: Abdullah Ghosheh (aghosheh.ieu2021@student.ie.edu), Ali Rammal (aram
 This project provides a financial dashboard that scraps articles from CNBC and provides article sentiment analysys, company stock tags (using NER) and custom article summarization, providing the user with most relevant insight into most important chnages in the market. 
 Below is an overview of the project's structure and contents.
 
-/nlp_analysis_toolkit
-│
-├── /sentiment
-│   ├── all-data.csv               # Dataset for sentiment analysis.
-│   └── nlp_group_sentiment.py     # Script for sentiment analysis.
-│
-├── /summaries
-│   ├── cnbc_article_summaries.csv # Summarized CNBC articles.
-│   ├── cnbc_summarizer.py         # Script to summarize CNBC articles.
-│   ├── reuters_summarizer.py      # Script to summarize Reuters articles.
-│   └── tryingPegasus.ipynb        # Notebook for summarization with Pegasus model.
-│
-├── /topics
-│   ├── topic_assigner_5_topics.py # Script for assigning topics to documents.
-│   └── GradioInterfaceIntegration.ipynb # Notebook for topic modeling with a Gradio interface.
-│
-├── /lda_gensim_5t                # Outputs and models for a 5-topic LDA model.
-└── /lda_gensim_9t                # Outputs and models for a 9-topic LDA model.
+**/nlp_analysis_toolkit**
+
+ /sentiment
+    all-data.csv               # Dataset for sentiment analysis.
+    nlp_group_sentiment.py     # Script for sentiment analysis.
+
+/summaries
+    cnbc_article_summaries.csv # Summarized CNBC articles.
+    cnbc_summarizer.py         # Script to summarize CNBC articles.
+    reuters_summarizer.py      # Script to summarize Reuters articles.
+    tryingPegasus.ipynb        # Notebook for summarization with Pegasus model.
+
+/topics
+    topic_assigner_5_topics.py # Script for assigning topics to documents.
+    GradioInterfaceIntegration.ipynb # Notebook for topic modeling with a Gradio interface.
+
+/lda_gensim_5t                # Outputs and models for a 5-topic LDA model.
+/lda_gensim_9t                # Outputs and models for a 9-topic LDA model.
 
 
 
