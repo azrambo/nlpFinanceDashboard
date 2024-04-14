@@ -8,12 +8,14 @@ Below is an overview of the project's structure and contents.
 
 **/nlp_analysis_toolkit**
 
- /sentiment
+ **sentiment**
+ 
     all-data.csv               # Dataset for sentiment analysis.
     
     nlp_group_sentiment.py     # Script for sentiment analysis.
 
-/summaries
+**summaries**
+
     cnbc_article_summaries.csv # Summarized CNBC articles.
     
     cnbc_summarizer.py         # Script to summarize CNBC articles.
@@ -22,10 +24,11 @@ Below is an overview of the project's structure and contents.
     
     tryingPegasus.ipynb        # Notebook for summarization with Pegasus model.
 
-/topics
+**topics**
     topic_assigner_5_topics.py # Script for assigning topics to documents.
     
     GradioInterfaceIntegration.ipynb # Notebook for topic modeling with a Gradio interface.
+    
 
 /lda_gensim_5t                # Outputs and models for a 5-topic LDA model.
 
