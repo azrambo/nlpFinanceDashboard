@@ -1,0 +1,11 @@
+gradio==4.24.0
+transformers==4.38.2
+beautifulsoup4==4.12.2
+pandas==1.5.3
+gensim==4.3.2
+nltk==3.8.1
+scipy==1.12.0
+tensorflow==2.15.0
+torch==2.2.1
+sentencepiece==0.1.99
+accelerate==0.27.2
