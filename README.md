@@ -51,7 +51,9 @@ Below is an overview of the project's structure and contents.
 
 **cnbc_summarizer.py:** A tool designed to condense CNBC news articles into brief summaries, utilizing extractive summarization techniques to retain the most significant information from the original content.
 
-**reuters_summarizer.py:** Similar to the CNBC summarizer, this script focuses on Reuters articles, applying NLP summarization methods to create concise abstracts of lengthy news stories.
+**Finetuning_t5-base.ipynb** A Jupyter notebook for the tuning of Google's t5-base model on the multi_news dataset over 1 epoch. This 220 million parameter Text-To-Text transformer can be used for NLP tasks such as summarization, question answering, and translation.  
+
+**Finetuning_t5-small.ipynb** A Jupyter notebook for the tuning of Google's t5-small model on the multi_news dataset over different epoch and preprocessing combinations. It has the same uses as the t5-base but with only 60 million parameters making it faster to train and predict. 
 
 **tryingPegasus.ipynb:** This Jupyter notebook demonstrates the use of the Pegasus model, a powerful abstractive summarization algorithm, to generate summaries of large text corpora with context coherence and fluency.
 
@@ -97,8 +99,3 @@ gradio
 **Pip Install command:**
 
 !pip install pandas numpy torch nltk transformers datasets sklearn gensim gradio
-
-
-
-
-
