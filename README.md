@@ -8,6 +8,12 @@ Below is an overview of the project's structure and contents.
 
 **/nlpFinanceDashboard**
 
+    app.py             # An app running the gradio interface and the script with models and text scraper. MAIN FILE
+    
+    GradioInterfaceIntegration.ipynb     # Gradio interface integration with models and scraper for easier experimemtaion and building.
+
+    requirements.txt       # A text file containing necessary PyPi packages and their version.
+
  **/sentiment**
  
     all-data.csv             # Dataset for sentiment analysis.
