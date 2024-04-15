@@ -224,7 +224,7 @@ class TextClassifier:
 
 # Usage example
 if __name__ == '__main__':
-    processor = TextDataProcessor('/content/all-data.csv')
+    processor = TextDataProcessor('/content/all-data.csv') #Put local path here
     processor.load_and_preprocess_data()
     processor.split_data()
 
