@@ -101,7 +101,4 @@ gensim
 
 gradio
 
-
-**Pip Install command:**
-
-!pip install pandas numpy torch nltk transformers datasets sklearn gensim gradio
+Please consult, full list with correct versions in requirements.txt.
